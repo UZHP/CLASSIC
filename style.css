@@ -1,0 +1,466 @@
+/* 
+    - This is Made With Love By Youssef Tamer 
+    - Start in 2022/7/23
+    - All Copy Rights Reserved To ExtentionYT
+*/
+
+/* ========== Start Global ========== */
+
+:root {
+    --whiteC: #FFF;
+    --lightGC: #1BBC90;
+    --lightBC: #EF9F19;
+    --darkEC: #EEE
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--whiteC);
+    font-family: "raleway", sans-serif;
+    text-transform: capitalize;
+    line-height: 1.6;
+    height: 5000px;
+}
+
+hr {
+    outline: 0;
+    border: 1px solid var(--darkEC);
+}
+
+::selection {
+    color: var(--lightBC);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.headingLine {
+    position: relative;
+}
+
+.headingLine::after {
+    position: absolute;
+    content: "";
+    top: 40px;
+    left: 0;
+    width: 40px;
+    height: 2.5px;
+    background-color: var(--lightBC);
+}
+
+/* ========== End Global ========== */
+
+/* ========== Start Nav ========== */
+
+.active {
+    color: var(--lightBC) !important;
+    position: relative;
+}
+
+.active:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0 !important;
+    height: 1px;
+    width: 100% !important;
+    background-color: var(--lightBC);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.navSection {
+    color: var(--whiteC);
+    padding: 20px 0;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.navSection .allNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navSection .allNav .logo {
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.navSection .allNav .navLinks {
+    display: inline-block;
+    list-style: none;
+}
+
+.navSection .allNav .navLinks ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navSection .allNav .navLinks ul li a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.navSection .allNav .navLinks ul li a:hover {
+    color: var(--lightBC);
+}
+
+.navSection .allNav .navLinks ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    height: 1px;
+    width: 0;
+    background-color: var(--lightBC);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.navSection .allNav .navLinks ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* ========== End Nav ========== */
+
+/* ========== Start Header ========== */
+
+.headerSection {
+    color: var(--whiteC);
+    background-image: url(../Image/Back-Header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    max-height: 620px;
+}
+
+.headerSection .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.headerSection .overlay .bx-wrapper {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.headerSection .overlay .bx-wrapper .bx-viewport {
+    height: 100% !important;
+}
+
+.headerSection .overlay .bx-wrapper .bx-viewport .slider {
+    height: 100%;
+}
+
+.headerSection .overlay .bx-wrapper .bx-viewport .slider li {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.headerSection .overlay .bx-wrapper .bx-viewport .slider li h2 {
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.headerSection .overlay .bx-wrapper .bx-viewport .slider li h2 span {
+    color: var(--lightBC);
+}
+
+.headerSection .overlay .bx-wrapper .bx-viewport .slider li p {
+    font-weight: normal;
+    font-size: 12px;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* ========== End Header ========== */
+
+/* ========== Start Services ========== */
+
+.servicesSection {
+    padding: 80px 0;
+}
+
+.servicesSection .servicesHeading {
+    margin-bottom: 40px;
+}
+
+.servicesSection .services {
+    /* display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap row;
+}
+
+.servicesSection .services .service {
+    display: flex;
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 20px;
+}
+
+.servicesSection .services .service i {
+    margin-right: 20px;
+    font-size: 62px;
+    color: var(--lightBC);
+    width: 100px;
+}
+
+i.disI {
+    display: none;
+}
+
+.servicesSection .services .service img {
+    margin-right: 20px;
+    width: 68px;
+    margin-top: -60px;
+}
+
+.servicesSection .services .service .pImg {
+    margin-top: -30px;
+    margin-left: -20px;
+    margin-right: 5px;
+    width: 96px;
+}
+
+.servicesSection .services .service .textService h3 {
+    margin-bottom: 20px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.servicesSection .services .service .textService p {
+    font-size: 12px;
+    max-width: 300px;
+}
+
+/* ========== End Services ========== */
+
+/* ========== Start Portfolio ========== */
+
+.portfolioSection {
+    padding: 80px 0;
+}
+
+.portfolioSection .allPortfolio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolioSection .allPortfolio .portfolioText {
+    width: 30%;
+}
+
+.portfolioSection .allPortfolio .portfolioText p {
+    font-size: 12px;
+}
+
+.portfolioSection .allPortfolio .portfolioText .portfolioHeading {
+    margin-bottom: 40px;
+}
+
+.portfolioSection .allPortfolio .portfolioContent {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolioSection .allPortfolio .portfolioContent .portfolioPhoto {
+    width: 100%;
+    height: 150px;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolioSection .allPortfolio .portfolioContent .portfolioPhoto:nth-last-of-type(1) {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.portfolioSection .allPortfolio .portfolioContent .portfolioPhoto .overlayPortfolioBack {
+    color: var(--whiteC);
+    position: absolute;
+    top: -150px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.portfolioSection .allPortfolio .portfolioContent .portfolioPhoto:hover .overlayPortfolioBack {
+    top: 0;
+    background-color: rgba(239, 161, 25, 0.255);
+}
+
+.portfolioSection .allPortfolio .portfolioContent .portfolioPhoto .overlayPortfolio {
+    color: var(--whiteC);
+    position: absolute;
+    top: -150px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    z-index: 2;
+}
+
+.portfolioSection .allPortfolio .portfolioContent .portfolioPhoto:hover .overlayPortfolio {
+    top: 0;
+    background-color: rgba(239, 161, 25, 0.5);
+}
+
+.headingLineOverlay {
+    position: relative;
+}
+
+.headingLineOverlay::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background-color: var(--whiteC);
+}
+
+.portfolioSection .allPortfolio .portfolioContent .portfolioPhoto.pPhoto1 {
+    background-image: url(../Image/portfolio-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolioSection .allPortfolio .portfolioContent .portfolioPhoto.pPhoto2 {
+    background-image: url(../Image/portfolio-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolioSection .allPortfolio .portfolioContent .portfolioPhoto.pPhoto3 {
+    background-image: url(../Image/portfolio-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolioSection .allPortfolio .portfolioContent .portfolioPhoto.pPhoto4 {
+    background-image: url(../Image/portfolio-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ========== End Portfolio ========== */
+
+/* ========== Start Media ========== */
+
+@media (max-width: 1210px) {
+    .servicesSection .services {
+        flex-direction: column;
+    }
+    .servicesSection .services .service {
+        width: 100%;
+    }
+    .servicesSection .services .service .textService p {
+        max-width: 100%;
+    }
+    .servicesSection .services .service i {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navLinks {
+        visibility: hidden;
+    }
+    .headerSection .overlay .bx-wrapper .bx-viewport .slider li p {
+        width: 300px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 725px) {
+    .servicesSection .services .service i {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .servicesSection .services .service i {
+        width: 250px;
+    }
+}
+
+/* ========== End Media ========== */
