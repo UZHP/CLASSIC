@@ -4,9 +4,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CLASSIC</title>
-        <link rel="icon" href="Image/favicon.jpg">
+        <link rel="icon" href="https://i.postimg.cc/KvvRS2jv/favicon.jpg">
         <link rel="stylesheet" href="Css/jquery.bxslider.css">
+        <link rel="stylesheet" href="Css/loading.css">
         <link rel="stylesheet" href="Css/style.css">
+        <link rel="stylesheet" href="Css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +16,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- ========== Start Loader ========== -->
+
+        <div class="loader">
+            <div class="loaderC">
+                <div class="loaderL"></div>
+                <span class="loaderText" >welcome to the <span>classic</span></span>
+            </div>
+        </div>
+
+        <!-- ========== End Loader ========== -->
+
         <!-- ========== Start Nav ========== -->
 
         <nav class="navSection">
@@ -23,13 +36,14 @@
                 </div>
                 <div class="navLinks">
                     <ul>
-                        <li class="active"><a href="#">home</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">testimonials</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li class="active"><a href="#home" class="transition">home</a></li>
+                        <li><a href="#services" class="transition">services</a></li>
+                        <li><a href="#portfolio" class="transition">portfolio</a></li>
+                        <li><a href="#testimonials" class="transition">testimonials</a></li>
+                        <li><a href="#products" class="transition">products</a></li>
                     </ul>
                 </div>
+                <!-- <i class="fa-solid fa-list navMenu"></i> -->
             </div>
         </nav>
         
@@ -37,21 +51,27 @@
 
         <!-- ========== Start Header ========== -->
 
-        <header class="headerSection">
+        <header class="headerSection" id="home">
             <div class="overlay">
                 <!-- Slider HTML (change this to your own!) -->
                 <ul class="slider">
                     <li>
-                        <h2>welcome to the <span>classic</span></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse, velit nihil sit est molestias officiis tenetur quos magnam dolores laboriosam, recusandae suscipit commodi cumque iure fugit dicta cum placeat!</p>
+                        <div class="container">
+                            <h2>welcome to the <span>classic</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse, velit nihil sit est molestias officiis tenetur quos magnam dolores laboriosam, recusandae suscipit commodi cumque iure fugit dicta cum placeat!</p>
+                        </div>
                     </li>
                     <li>
-                        <h2>welcome to the <span>classic</span></h2>
-                        <p>dolores laboriosam, recusandae suscipit commodi cumque iure fugit dicta cum placeat!</p>
+                        <div class="container">
+                            <h2>the best web site in <span>america</span></h2>
+                            <p>dolores laboriosam, recusandae suscipit commodi cumque iure fugit dicta cum placeat!</p>
+                        </div>
                     </li>
                     <li>
-                        <h2>welcome to the <span>classic</span></h2>
-                        <p>Letur quos magnam dolores laboriosam, recusandae suscipit commodi cumque iure fugit dicta cum placeat!</p>
+                        <div class="container">
+                            <h2>created in <span>2022</span></h2>
+                            <p>Letur quos magnam dolores laboriosam, recusandae suscipit commodi cumque iure fugit dicta cum placeat!</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -61,30 +81,34 @@
 
         <!-- ========== Start Services ========== -->
 
-        <section class="servicesSection">
+        <section class="servicesSection" id="services">
             <div class="container">
-                <h2 class="headingLine servicesHeading">our services</h2>
+                <h2 class="headingLine">our services</h2>
                 <div class="services">
                     <div class="service">
                         <!-- <i class="fa-solid fa-mobile"></i> -->
-                        <i class="fa-solid fa-mobile-screen"></i>
+                        <!-- <i class="fa-solid fa-mobile-screen"></i> -->
                         <!-- <img class="pImg disB" src="SVG/cell-phone-svgrepo-com.svg" alt="responsive layout"> -->
+                        <!-- <img src="SVG/cell-phone-svgrepo-com.svg" alt="responsive layout"> -->
+                        <img src="SVG/code.svg" alt="responsive layout">
                         <div class="textService">
                             <h3>responsive layout</h3>
                             <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
                         </div>
                     </div>
                     <div class="service">
-                        <i class="fa-solid fa-cloud"></i>
-                        <!-- <img src="SVG/cloud-outline-svgrepo-com.svg" alt="cloud services" class="disB"> -->
+                        <!-- <i class="fa-solid fa-cloud"></i> -->
+                        <!-- <img src="SVG/cloud-outline-svgrepo-com.svg" alt="cloud services"> -->
+                        <img src="SVG/cloud.svg" alt="cloud services">
                         <div class="textService">
                             <h3>cloud services</h3>
                             <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
                         </div>
                     </div>
                     <div class="service">
-                        <i class="fa-regular fa-lightbulb"></i>
+                        <!-- <i class="fa-regular fa-lightbulb"></i> -->
                         <!-- <i class="fa-solid fa-lightbulb"></i> -->
+                        <img src="SVG/lightbulb.svg" alt="fresh &amp; right ideas" style="margin-top: -40px;">
                         <div class="textService">
                             <h3>fresh &amp; right ideas</h3>
                             <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
@@ -94,15 +118,17 @@
                         <!-- <i class="fa-solid fa-message"></i> -->
                         <!-- <i class="fa-regular fa-message"></i> -->
                         <!-- <i class="fa-solid fa-envelope"></i> -->
-                        <i class="fa-regular fa-envelope"></i>
+                        <!-- <i class="fa-regular fa-envelope"></i> -->
+                        <img src="SVG/envelope.svg" alt="attachment">
                         <div class="textService">
                             <h3>attachment</h3>
                             <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
                         </div>
                     </div>
                     <div class="service">
+                        <!-- <i class="fa-solid fa-video"></i> -->
                         <!-- <img src="SVG/video-outline-4.svg" alt="support video"> -->
-                        <i class="fa-solid fa-video"></i>
+                        <img src="SVG/video.svg" alt="support video">
                         <div class="textService">
                             <h3>support video</h3>
                             <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
@@ -110,9 +136,10 @@
                     </div>
                     <div class="service">
                         <!-- <i class="fa-solid fa-heart"></i> -->
-                        <i class="fa-regular fa-heart"></i>
+                        <!-- <i class="fa-regular fa-heart"></i> -->
+                        <img src="SVG/heart.svg" alt="lovely design">
                         <div class="textService">
-                            <h3>attachment</h3>
+                            <h3>lovely design</h3>
                             <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
                         </div>
                     </div>
@@ -132,34 +159,34 @@
 
         <!-- ========== Start Portfolio ========== -->
 
-        <section class="portfolioSection">
+        <section class="portfolioSection" id="portfolio">
             <div class="container allPortfolio">
                 <div class="portfolioText">
-                    <h2 class="headingLine portfolioHeading">our portfolio</h2>
+                    <h2 class="headingLine">our portfolio</h2>
                     <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
                 </div>
                 <div class="portfolioContent">
                     <div class="portfolioPhoto pPhoto1">
-                        <div class="overlayPortfolioBack"></div>
-                        <div class="overlayPortfolio">
+                        <div class="overlayPortfolioBack transition"></div>
+                        <div class="overlayPortfolio transition">
                             <p class="headingLineOverlay">Lorem ipsum</p>
                         </div>
                     </div>
                     <div class="portfolioPhoto pPhoto2">
-                        <div class="overlayPortfolioBack"></div>
-                        <div class="overlayPortfolio">
+                        <div class="overlayPortfolioBack transition"></div>
+                        <div class="overlayPortfolio transition">
                             <p class="headingLineOverlay">Lorem ipsum</p>
                         </div>
                     </div>
                     <div class="portfolioPhoto pPhoto3">
-                        <div class="overlayPortfolioBack"></div>
-                        <div class="overlayPortfolio">
+                        <div class="overlayPortfolioBack transition"></div>
+                        <div class="overlayPortfolio transition">
                             <p class="headingLineOverlay">Lorem ipsum</p>
                         </div>
                     </div>
                     <div class="portfolioPhoto pPhoto4">
-                        <div class="overlayPortfolioBack"></div>
-                        <div class="overlayPortfolio">
+                        <div class="overlayPortfolioBack transition"></div>
+                        <div class="overlayPortfolio transition">
                             <p class="headingLineOverlay">Lorem ipsum</p>
                         </div>
                     </div>
@@ -168,9 +195,253 @@
         </section>
 
         <!-- ========== End Portfolio ========== -->
-        
+
+        <!-- ========== Start Testimonials ========== -->
+
+        <section class="testimonialsSection" id="testimonials">
+            <div class="overlay">
+                <div class="allTestimonials">
+                    <div class="container">
+                        <h2 class="headingLine">what our client say</h2>
+                    </div>
+                    <ul class="slider">
+                        <li>
+                            <div class="container">
+                                <q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam mollitia quia eos sit, dolores, aliquid possimus repudiandae voluptatibus reprehenderit voluptatem exercitationem. Recusandae, earum consectetur. Cupiditate sequi sed reprehenderit similique dolore?</q>
+                                <span>ashley cady</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container">
+                                <q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam mollitia quia eos sit, dolores, aliquid possimus repudiandae voluptatibus reprehenderit voluptatem exercitationem. Recusandae, earum consectetur. Cupiditate sequi sed reprehenderit similique dolore?</q>
+                                <span>amelia Elijah</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container">
+                                <q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam mollitia quia eos sit, dolores, aliquid possimus repudiandae voluptatibus reprehenderit voluptatem exercitationem. Recusandae, earum consectetur. Cupiditate sequi sed reprehenderit similique dolore?</q>
+                                <span>olivia Noah</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== End Testimonials ========== -->
+
+        <!-- ========== Start Products ========== -->
+
+        <section class="productsSection" id="products">
+            <div class="container">
+                <h2 class="headingLine">our products</h2>
+                <ul class="productsButtons">
+                    <li class="button selected transition" data-filter="all">all</li>
+                    <li class="button transition" data-filter=".black">black</li>
+                    <li class="button transition" data-filter=".natural">natural</li>
+                    <li class="button transition" data-filter=".space">space</li>
+                    <li class="button transition" data-filter=".code">code</li>
+                    <li class="button transition" data-filter=".visual">visual</li>
+                </ul>
+                <div class="products" id="container">
+                    <div class="product productP1 mix black">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 10</span> -->
+                            <span><i class="fa fa-heart"></i> 10</span>
+                        </div>
+                    </div>
+                    <div class="product productP2 mix black">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 15</span> -->
+                            <span><i class="fa fa-heart"></i> 15</span>
+                        </div>
+                    </div>
+                    <div class="product productP3 mix black">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 20</span> -->
+                            <span><i class="fa fa-heart"></i> 20</span>
+                        </div>
+                    </div>
+                    <div class="product productP4 mix space">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 25</span> -->
+                            <span><i class="fa fa-heart"></i> 25</span>
+                        </div>
+                    </div>
+                    <div class="product productP5 mix space">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 30</span> -->
+                            <span><i class="fa fa-heart"></i> 30</span>
+                        </div>
+                    </div>
+                    <div class="product productP6 mix code">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 35</span> -->
+                            <span><i class="fa fa-heart"></i> 35</span>
+                        </div>
+                    </div>
+                    <div class="product productP7 mix code">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 40</span> -->
+                            <span><i class="fa fa-heart"></i> 40</span>
+                        </div>
+                    </div>
+                    <div class="product productP8 mix natural">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 45</span> -->
+                            <span><i class="fa fa-heart"></i> 45</span>
+                        </div>
+                    </div>
+                    <div class="product productP9 mix natural">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 50</span> -->
+                            <span><i class="fa fa-heart"></i> 50</span>
+                        </div>
+                    </div>
+                    <div class="product productP10 mix natural">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 55</span> -->
+                            <span><i class="fa fa-heart"></i> 55</span>
+                        </div>
+                    </div>
+                    <div class="product productP11 mix visual">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 60</span> -->
+                            <span><i class="fa fa-heart"></i> 60</span>
+                        </div>
+                    </div>
+                    <div class="product productP12 mix visual">
+                        <div class="overlayProductsBack transition"></div>
+                        <div class="overlayProducts transition">
+                            <a href="#" class="transition">view more</a>
+                            <!-- <span><i class="fa-regular fa-heart"></i> 65</span> -->
+                            <span><i class="fa fa-heart"></i> 65</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== End Products ========== -->
+
+        <!-- ========== Start Footer ========== -->
+
+        <footer class="footerSection">
+            <div class="container">
+                <div class="footers">
+                    <div class="footer footerS1">
+                        <h3>about <span>classic</span></h3>
+                        <p>Lorem ipsum, dolamet consectetur adipisicing elit. Iusto, vero. Labore ae. Lorem dolar ipusim</p>
+                        <div class="footerLinks">
+                            <a href="#" class="noML transition">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="transition">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="transition">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer footerS2">
+                        <h3>tags</h3>
+                        <div class="tags">
+                            <div class="tag transition noML">html</div>
+                            <div class="tag transition">css</div>
+                            <div class="tag transition">photoshop</div>
+                            <div class="tag transition noML">responsive</div>
+                            <div class="tag transition">art</div>
+                        </div>
+                    </div>
+                    <div class="footer footerS3">
+                        <h3>recent posts</h3>
+                        <div class="recents">
+                            <div class="recent">
+                                <div class="footerImg fImg1">
+                                    <div class="overlayFooterBack transition"></div>
+                                    <div class="overlayFooter transition">
+                                        <a href="#" class="transition">view more</a>
+                                    </div>
+                                </div>
+                                <div class="recentText">
+                                    <p>how to git rid of ants</p>
+                                    <span>june, 2022</span>
+                                </div>
+                            </div>
+                            <div class="recent">
+                                <div class="footerImg fImg2">
+                                    <div class="overlayFooterBack transition"></div>
+                                    <div class="overlayFooter transition">
+                                        <a href="#" class="transition">view more</a>
+                                    </div>
+                                </div>
+                                <div class="recentText">
+                                    <p>why i'm ranning</p>
+                                    <span>june, 2022</span>
+                                </div>
+                            </div>
+                            <div class="recent">
+                                <div class="footerImg fImg3">
+                                    <div class="overlayFooterBack transition"></div>
+                                    <div class="overlayFooter transition">
+                                        <a href="#" class="transition">view more</a>
+                                    </div>
+                                </div>
+                                <div class="recentText">
+                                    <p>casella waste</p>
+                                    <span>june, 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer footerS4">
+                        <h3>blog categories</h3>
+                        <div class="categories">
+                            <p class="categorie">agency</p>
+                            <p class="categorie">business</p>
+                            <p class="categorie">multi purpose</p>
+                            <p class="categorie">audio</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="rights">copyrights &copy; 2022 all rights reserved</p>
+            </div>
+        </footer>
+
+        <!-- ========== End Footer ========== -->
+
+        <span class="top transition">
+            <span class="FT transition"></span>
+            <span class="LT transition"></span>
+            <i class="fa-solid fa-arrow-up"></i>
+        </span>
+
         <script src="Js/jquery-3.6.0.min.js"></script>
         <script src="Js/jquery.bxslider.js"></script>
+        <script src="Js/mixitup.min.js"></script>
         <script src="Js/main.js"></script>
     </body>
     </html>

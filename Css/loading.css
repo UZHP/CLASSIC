@@ -1,0 +1,118 @@
+/* ========== Start Loader ========== */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--whiteC);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  text-transform: capitalize;
+}
+
+.loaderC {
+  display: flex;
+}
+
+.loaderL {
+  width: 75px;
+  height: 75px;
+  border: 5px solid var(--darkEC);
+  border-top-color: var(--lightBC);
+  animation: rotate-right 2s linear infinite;
+  -webkit-animation: rotate-right 2s linear infinite;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@keyframes rotate-right {
+  to {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+  }
+}
+
+/* .loaderL::before {
+  content: "";
+  width: 32.5px;
+  height: 32.5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 5px solid transparent;
+  border-top-color: var(--lightBC);
+  border-radius: 50%;
+  animation: rotate-left 1s linear infinite;
+  -webkit-animation: rotate-left 1s linear infinite;
+}
+
+@keyframes rotate-left {
+  from {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-1turn);
+    -webkit-transform: rotate(-1turn);
+    -moz-transform: rotate(-1turn);
+    -ms-transform: rotate(-1turn);
+    -o-transform: rotate(-1turn);
+  }
+} */
+
+.disappear {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition-delay: 2.5s;
+}
+
+.loaderText {
+  color: var(--darkBC);
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+  position: absolute;
+  margin-top: 67.5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.loaderText span {
+  color: var(--lightBC);
+}
+
+@media (max-width: 1000px) {
+  .loaderText {
+    font-size: 12px;
+  }
+}
+
+/* ========== End Loader ========== */
