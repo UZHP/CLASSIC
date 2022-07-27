@@ -76,6 +76,6 @@ $(function () {
 
     function vanish() {
         loader.classList.add("disappear")
-    }
+    };
 
 });
